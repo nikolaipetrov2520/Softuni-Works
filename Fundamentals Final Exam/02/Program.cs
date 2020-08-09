@@ -8,7 +8,7 @@ namespace _02
     {
         static void Main(string[] args)
         {
-            string patern = @"(=|\/)([A-Z][a-z]{2,})\1";
+            string patern = @"(=|\/)([A-Z][A-Za-z]{2,})\1";
             List<string> list = new List<string>();
             int points = 0;
             string input = Console.ReadLine();

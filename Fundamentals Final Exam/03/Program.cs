@@ -8,23 +8,23 @@ namespace _03
     {
         static void Main(string[] args)
         {
-            Dictionary<string, List<double>> planets = new Dictionary<string, List<double>>();
+            Dictionary<string, List<double>> plants = new Dictionary<string, List<double>>();
 
             int n = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < n; i++)
             {
                 string[] text = Console.ReadLine().Split("<->");
-                string planet = text[0];
+                string plant = text[0];
                 double rarity = double.Parse(text[1]);
 
-                if (!planets.ContainsKey(planet))
+                if (!plants.ContainsKey(plant))
                 {
-                    planets.Add(planet, new List<double> { rarity });
+                    plants.Add(plant, new List<double> { rarity });
                 }
                 else
                 {
-                    planets[planet][0] = rarity;
+                    plants[plant][0] = rarity;
                 }
             }
             string input = Console.ReadLine();
@@ -37,11 +37,11 @@ namespace _03
                 if (input.Contains("Rate"))
                 {
                     string[] data = command[1].Split(" - ", StringSplitOptions.RemoveEmptyEntries);
-                    string planet = data[0];
+                    string plant = data[0];
                     double rating = double.Parse(data[1]);
-                    if (planets.ContainsKey(planet))
+                    if (plants.ContainsKey(plant))
                     {
-                        planets[planet].Add(rating);
+                        plants[plant].Add(rating);
                     }
                     else
                     {
@@ -51,12 +51,12 @@ namespace _03
                 else if (input.Contains("Update"))
                 {
                     string[] data = command[1].Split(" - ", StringSplitOptions.RemoveEmptyEntries);
-                    string planet = data[0];
+                    string plant = data[0];
                     double rarity = double.Parse(data[1]);
 
-                    if (planets.ContainsKey(planet))
+                    if (plants.ContainsKey(plant))
                     {
-                        planets[planet][0] = rarity;
+                        plants[plant][0] = rarity;
                     }
                     else
                     {
@@ -66,13 +66,13 @@ namespace _03
                 }
                 else if (input.Contains("Reset"))
                 {
-                    string planet = command[1];
+                    string plant = command[1];
 
-                    if (planets.ContainsKey(planet))
+                    if (plants.ContainsKey(plant))
                     {
-                        while (planets[planet].Count > 1)
+                        while (plants[plant].Count > 1)
                         {
-                            planets[planet].RemoveAt(planets[planet].Count - 1);
+                            plants[plant].RemoveAt(plants[plant].Count - 1);
                         }
                     }
                     else
@@ -86,7 +86,7 @@ namespace _03
             
             Dictionary<string, List<double>> averageDict = new Dictionary<string, List<double>>();
 
-            foreach (var pear in planets)
+            foreach (var pear in plants)
             {
                 double average = 0.0;
 
