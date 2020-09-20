@@ -38,7 +38,7 @@ namespace _07._Truck_Tour
                 }
                 else
                 {
-                    i = 0;
+                    i = -1;
                     sumFuel = 0;
                 }
             }
