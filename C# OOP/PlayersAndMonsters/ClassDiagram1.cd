@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PlayersAndMonsters.Hero">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAQAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayersAndMonsters.Elf">
+    <Position X="2.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Elf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayersAndMonsters.Wizard">
+    <Position X="7.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wizard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayersAndMonsters.Knight">
+    <Position X="9.75" Y="1" Width="1.5" />
+    <InheritanceLine Type="PlayersAndMonsters.Hero" ManuallyRouted="true">
+      <Path>
+        <Point X="6" Y="0.5" />
+        <Point X="6" Y="0.168" />
+        <Point X="10.5" Y="0.168" />
+        <Point X="10.5" Y="2.233" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Knight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayersAndMonsters.MuseElf">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MuseElf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayersAndMonsters.DarkWizard">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DarkWizard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayersAndMonsters.SoulMaster">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SoulMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayersAndMonsters.DarkKnight">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DarkKnight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayersAndMonsters.BladeKnight">
+    <Position X="9.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BladeKnight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
